@@ -62,22 +62,18 @@ public class Progressbar extends View implements Runnable {
 
     public Progressbar(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(context,attrs);
     }
 
     public Progressbar(Context context) {
         super(context);
-       init();
+       init(context,null);
     }
 
     public Progressbar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray array=context.obtainStyledAttributes(attrs, R.styleable.myview);
-        line_color=array.getColor(R.styleable.myview_line_color, Color.BLACK);
-        circle_color=array.getColor(R.styleable.myview_circle_color, Color.BLUE);
-        word_color=array.getColor(R.styleable.myview_word_color, Color.BLACK);
-        array.recycle();
-       init();
+
+        init(context,attrs);
 
     }
 
@@ -101,54 +97,25 @@ public class Progressbar extends View implements Runnable {
 
 
     }
-    public int calculate(){
+    private int calculate(){
         double length= hasdownload*(width-panleft-panright-2*radius);
 
         return (int)length;
     }
 
-    @Override
-    public void draw(Canvas canvas) {
-        super.draw(canvas);
-    }
 
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
-        setMeasuredDimension(getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec),
-                getDefaultSize(getSuggestedMinimumHeight(), heightMeasureSpec));
-
-    }
-    public static int getDefaultSize(int size, int measureSpec) {
-        int result = size;
-        int specMode = MeasureSpec.getMode(measureSpec);
-        int specSize = MeasureSpec.getSize(measureSpec);
-
-        switch (specMode) {
-            case MeasureSpec.UNSPECIFIED:
-                result = size;
-                break;
-            case MeasureSpec.AT_MOST:
-            case MeasureSpec.EXACTLY:
-                result = specSize;
-                break;
+    public void init(Context context,AttributeSet attrs){
+        if (attrs!=null){
+        TypedArray array=context.obtainStyledAttributes(attrs, R.styleable.myview);
+        line_color=array.getColor(R.styleable.myview_line_color, Color.BLACK);
+        circle_color=array.getColor(R.styleable.myview_circle_color, Color.BLUE);
+        word_color=array.getColor(R.styleable.myview_word_color, Color.BLACK);
+        array.recycle();
         }
-        return result;
-    }
-    public void init(){
         new Thread(this).start();
 
     }
 
-    @Override
-    public void layout(int l, int t, int r, int b) {
 
-        super.layout(l, t, r, b);
-    }
-
-    @Override
-    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-
-        super.onLayout(changed, left, top, right, bottom);
-    }
 }
