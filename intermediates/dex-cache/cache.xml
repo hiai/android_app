@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\adt-bundle-windows-x86_64-20140702\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-82c56c482f8a83e95c5d6651c40bb1174ddc25bd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\pre-dexed\debug\classes-ba52c2d5fd86347c336ea8901d5e4db7d9925e5f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-1011a97912b4753804dccd4763865bfbf84c1313.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\pre-dexed\debug\classes-eae2424ba288de988258ad93b4f967c9c604f7f5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\pre-dexed\debug\classes-6af03448a6ecb383ef05536db89610114035de48.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="C:\Users\Administrator\Desktop\HMT\Myview\app\build\intermediates\pre-dexed\debug\classes-9188f42154b486af6599a3272170048457f6ed85.jar" />
+    </item>
+
+</items>
