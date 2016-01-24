@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="myview">
+        <attr name="line_color" format="color"/>
+        <attr name="circle_color" format="color"/>
+            <attr name="word_color" format="color"/>
+    </declare-styleable>
+  
+    
+</resources>
